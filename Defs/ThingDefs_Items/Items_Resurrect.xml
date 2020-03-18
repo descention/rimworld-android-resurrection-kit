@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MechSerumBase">
+    <defName>RepairKitResurrectorB</defName>
+    <label>b-tier resurrector repair kit</label>
+    <description>An all-in-one repair kit. Revive dead T1 androids using a vast array of replacement parts and specialized tools.</description>
+    <graphicData>
+      <texPath>Things/ResKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <MarketValue>500</MarketValue>
+    </statBases>
+    <tradeability>Sellable</tradeability>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use resurrector repair kit</useLabel>
+        <useDuration>0</useDuration>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SingleCorpse</compClass>
+        <nonDessicatedCorpsesOnly>true</nonDessicatedCorpsesOnly>
+      </li>
+      <li>
+        <compClass>AndroidResurrectionKit.CompTargetEffect_ResurrectAndroid1</compClass>
+      </li>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="MechSerumBase">
+    <defName>RepairKitResurrectorA</defName>
+    <label>a-tier resurrector repair kit</label>
+    <description>An all-in-one repair kit. Revive dead T1 and T2 androids using a vast array of replacement parts and specialized tools.</description>
+    <graphicData>
+      <texPath>Things/ResKit2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <MarketValue>800</MarketValue>
+    </statBases>
+    <tradeability>Sellable</tradeability>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use resurrector repair kit</useLabel>
+        <useDuration>0</useDuration>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SingleCorpse</compClass>
+        <nonDessicatedCorpsesOnly>true</nonDessicatedCorpsesOnly>
+      </li>
+      <li>
+        <compClass>AndroidResurrectionKit.CompTargetEffect_ResurrectAndroid2</compClass>
+      </li>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+  </ThingDef>
+  
+    <ThingDef ParentName="MechSerumBase">
+    <defName>RepairKitResurrectorS</defName>
+    <label>s-tier resurrector repair kit</label>
+    <description>An all-in-one universal repair kit. Revive any dead android using a vast array of replacement parts and specialized tools.</description>
+    <graphicData>
+      <texPath>Things/ResKit3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+    </statBases>
+    <tradeability>Sellable</tradeability>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use resurrector repair kit</useLabel>
+        <useDuration>0</useDuration>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SingleCorpse</compClass>
+        <nonDessicatedCorpsesOnly>true</nonDessicatedCorpsesOnly>
+      </li>
+      <li>
+        <compClass>AndroidResurrectionKit.CompTargetEffect_ResurrectAndroid3</compClass>
+      </li>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+  </ThingDef>
+  
+  <RecipeDef>
+      <defName>RepairKitARK1</defName>
+      <label>Make a B-tier resurrector repair kit</label>
+      <description>Create a T1 android revival kit. Revive dead T1 androids using a vast array of replacement parts and specialized tools.</description>
+      <jobString>Making repair kit</jobString>  
+      <allowMixingIngredients>false</allowMixingIngredients>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>RepairKitAT</li>
+               </thingDefs>
+            </filter>
+            <count>5</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Steel</li>
+               </thingDefs>
+            </filter>
+            <count>25</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>10</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>ComponentIndustrial</li>
+               </thingDefs>
+            </filter>
+            <count>5</count>
+         </li>
+      </ingredients>
+      <products>
+         <RepairKitResurrectorB>1</RepairKitResurrectorB>
+      </products>
+      <workAmount>2500</workAmount>
+      <workSpeedStat>SculptingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+	 <recipeUsers>
+		<li>TableMachining</li>
+		<li>AndroidPartsTable</li>
+      </recipeUsers>
+      
+	</RecipeDef>
+
+  <RecipeDef>
+      <defName>RepairKitARK2</defName>
+      <label>Make a A-tier resurrector repair kit</label>
+      <description>Create a T1 and T2 android revival kit. Revive dead T1 and T2 androids using a vast array of replacement parts and specialized tools.</description>
+      <jobString>Making repair kit</jobString>  
+      <allowMixingIngredients>false</allowMixingIngredients>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>RepairKitAT</li>
+               </thingDefs>
+            </filter>
+            <count>12</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Steel</li>
+               </thingDefs>
+            </filter>
+            <count>50</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>25</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>ComponentIndustrial</li>
+               </thingDefs>
+            </filter>
+            <count>8</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Gold</li>
+               </thingDefs>
+            </filter>
+            <count>1</count>
+         </li>
+      </ingredients>
+      <products>
+         <RepairKitResurrectorA>1</RepairKitResurrectorA>
+      </products>
+      <workAmount>4000</workAmount>
+      <workSpeedStat>SculptingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+	 <recipeUsers>
+		<li>AndroidPartsTable</li>
+      </recipeUsers>
+      
+	</RecipeDef>
+	
+	<RecipeDef>
+      <defName>RepairKitARK3</defName>
+      <label>Make a S-tier resurrector repair kit</label>
+      <description>Create a universal android revival kit. Revive any dead android using a vast array of replacement parts and specialized tools.</description>
+      <jobString>Making repair kit</jobString>  
+      <allowMixingIngredients>false</allowMixingIngredients>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>RepairKitAT</li>
+               </thingDefs>
+            </filter>
+            <count>20</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Steel</li>
+               </thingDefs>
+            </filter>
+            <count>85</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>50</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>ComponentSpacer</li>
+               </thingDefs>
+            </filter>
+            <count>5</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>ComponentIndustrial</li>
+               </thingDefs>
+            </filter>
+            <count>6</count>
+         </li>
+		 <li>
+            <filter>
+               <thingDefs>
+                  <li>Gold</li>
+               </thingDefs>
+            </filter>
+            <count>4</count>
+         </li>
+      </ingredients>
+      <products>
+         <RepairKitResurrectorS>1</RepairKitResurrectorS>
+      </products>
+      <workAmount>7500</workAmount>
+      <workSpeedStat>SculptingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+	 <recipeUsers>
+		<li>AndroidPartsTable</li>
+      </recipeUsers>
+      
+	</RecipeDef>
+</Defs>

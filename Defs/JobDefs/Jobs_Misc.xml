@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>ResurrectAndroid1</defName>
+    <driverClass>AndroidResurrectionKit.JobDriver_ResurrectAndroid1</driverClass>
+    <reportString>repairing TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>ResurrectAndroid2</defName>
+    <driverClass>AndroidResurrectionKit.JobDriver_ResurrectAndroid2</driverClass>
+    <reportString>repairing TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>ResurrectAndroid3</defName>
+    <driverClass>AndroidResurrectionKit.JobDriver_ResurrectAndroid3</driverClass>
+    <reportString>repairing TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+</Defs>
