@@ -10,4 +10,5 @@ All items can be produced at Android Parts Workbench, and B-Tier kits can additi
 This is updated to Rimworld 1.1 by descention. Original mod is done by malistaticy for Rimworld 1.0.
 
 1.0: https://steamcommunity.com/sharedfiles/filedetails/?id=1615379873
+
 1.1: https://steamcommunity.com/sharedfiles/filedetails/?id=2025966263
