@@ -25,7 +25,7 @@
         <nonDessicatedCorpsesOnly>true</nonDessicatedCorpsesOnly>
       </li>
       <li>
-        <compClass>AndroidResurrectionKit.CompTargetEffect_ResurrectAndroid1</compClass>
+        <compClass>AndroidResurrectionKit.CompTargetEffect_ResurrectAndroid</compClass>
       </li>
     </comps>
     <thingSetMakerTags>
@@ -57,7 +57,7 @@
         <nonDessicatedCorpsesOnly>true</nonDessicatedCorpsesOnly>
       </li>
       <li>
-        <compClass>AndroidResurrectionKit.CompTargetEffect_ResurrectAndroid2</compClass>
+        <compClass>AndroidResurrectionKit.CompTargetEffect_ResurrectAndroid</compClass>
       </li>
     </comps>
     <thingSetMakerTags>
@@ -89,7 +89,7 @@
         <nonDessicatedCorpsesOnly>true</nonDessicatedCorpsesOnly>
       </li>
       <li>
-        <compClass>AndroidResurrectionKit.CompTargetEffect_ResurrectAndroid3</compClass>
+        <compClass>AndroidResurrectionKit.CompTargetEffect_ResurrectAndroid</compClass>
       </li>
     </comps>
     <thingSetMakerTags>
@@ -141,7 +141,7 @@
          <RepairKitResurrectorB>1</RepairKitResurrectorB>
       </products>
       <workAmount>2500</workAmount>
-      <workSpeedStat>SculptingSpeed</workSpeedStat>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
@@ -204,7 +204,7 @@
          <RepairKitResurrectorA>1</RepairKitResurrectorA>
       </products>
       <workAmount>4000</workAmount>
-      <workSpeedStat>SculptingSpeed</workSpeedStat>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
@@ -274,7 +274,7 @@
          <RepairKitResurrectorS>1</RepairKitResurrectorS>
       </products>
       <workAmount>7500</workAmount>
-      <workSpeedStat>SculptingSpeed</workSpeedStat>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>

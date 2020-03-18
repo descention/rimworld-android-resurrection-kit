@@ -7,11 +7,11 @@ using Verse.AI;
 namespace AndroidResurrectionKit
 {
     // Token: 0x0200007F RID: 127
-    public class JobDriver_ResurrectAndroid2 : JobDriver
+    public class JobDriver_ResurrectAndroid : JobDriver
     {
         // Token: 0x170000B3 RID: 179
         // (get) Token: 0x06000363 RID: 867 RVA: 0x00022338 File Offset: 0x00020738
-        private Corpse Corpse
+        internal Corpse Corpse
         {
             get
             {
@@ -69,14 +69,30 @@ namespace AndroidResurrectionKit
         private void Resurrect()
         {
             Pawn innerPawn = this.Corpse.InnerPawn;
-            if (innerPawn.kindDef.race.defName.ToLower().Contains("1tier") || innerPawn.kindDef.race.defName.ToLower().Contains("2tier"))
+
+            bool canResurrect = false;
+            string deadPawnRaceName = innerPawn.kindDef.race.defName.ToLower();
+            switch (Item.def.defName)
+            {
+                case "RepairKitResurrectorB":
+                    canResurrect = deadPawnRaceName.Contains("1tier");
+                    break;
+                case "RepairKitResurrectorA":
+                    canResurrect = deadPawnRaceName.Contains("1tier") || deadPawnRaceName.Contains("2tier");
+                    break;
+                case "RepairKitResurrectorS":
+                    canResurrect = deadPawnRaceName.Contains("android");
+                    break;
+            }
+
+            if (canResurrect)
             {
                 ResurrectionUtility.Resurrect(innerPawn);
                 Messages.Message("MessagePawnResurrected".Translate(innerPawn).CapitalizeFirst(), innerPawn, MessageTypeDefOf.PositiveEvent, true);
                 this.Item.SplitOff(1).Destroy(DestroyMode.Vanish);
             }
             else
-            Messages.Message("CantRepair".Translate(innerPawn).CapitalizeFirst(), innerPawn, MessageTypeDefOf.RejectInput, true);
+                Messages.Message("CantRepair".Translate(innerPawn).CapitalizeFirst(), innerPawn, MessageTypeDefOf.RejectInput, true);
         }
 
         // Token: 0x04000238 RID: 568

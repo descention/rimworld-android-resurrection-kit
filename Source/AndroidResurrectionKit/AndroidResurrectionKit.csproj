@@ -33,13 +33,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="CompTargetEffect_ResurrectAndroid1.cs" />
-    <Compile Include="CompTargetEffect_ResurrectAndroid2.cs" />
+    <Compile Include="CompTargetEffect_ResurrectAndroid.cs" />
     <Compile Include="JobDefOf.cs" />
-    <Compile Include="CompTargetEffect_ResurrectAndroid3.cs" />
-    <Compile Include="JobDriver_ResurrectAndroid1.cs" />
-    <Compile Include="JobDriver_ResurrectAndroid2.cs" />
-    <Compile Include="JobDriver_ResurrectAndroid3.cs" />
+    <Compile Include="JobDriver_ResurrectAndroid.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -17,8 +17,6 @@ namespace AndroidResurrectionKit
         }
 
         // Token: 0x04001FF3 RID: 8179
-        public static JobDef ResurrectAndroid1;
-        public static JobDef ResurrectAndroid2;
-        public static JobDef ResurrectAndroid3;
+        public static JobDef ResurrectAndroid;
     }
 }
