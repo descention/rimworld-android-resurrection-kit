@@ -9,6 +9,9 @@
       <texPath>Things/ResKit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
     <stackLimit>10</stackLimit>
     <statBases>
       <MarketValue>500</MarketValue>
@@ -41,6 +44,9 @@
       <texPath>Things/ResKit2</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
     <stackLimit>10</stackLimit>
     <statBases>
       <MarketValue>800</MarketValue>
@@ -73,6 +79,9 @@
       <texPath>Things/ResKit3</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
     <stackLimit>10</stackLimit>
     <statBases>
       <MarketValue>2000</MarketValue>
