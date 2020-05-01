@@ -71,23 +71,33 @@ namespace AndroidResurrectionKit
             Pawn innerPawn = this.Corpse.InnerPawn;
 
             bool canResurrect = false;
-            string deadPawnRaceName = innerPawn.kindDef.race.defName.ToLower();
+            ThingDef race = innerPawn.kindDef.race;
+            string deadPawnRaceName = race.defName;
             switch (Item.def.defName)
             {
                 case "RepairKitResurrectorB":
-                    canResurrect = deadPawnRaceName.Contains("1tier");
+                    canResurrect = deadPawnRaceName == "Android1Tier";
                     break;
                 case "RepairKitResurrectorA":
-                    canResurrect = deadPawnRaceName.Contains("1tier") || deadPawnRaceName.Contains("2tier");
+                    canResurrect = deadPawnRaceName == "Android1Tier" || deadPawnRaceName == "Android2Tier" || deadPawnRaceName.StartsWith("ATPP_Android2");
                     break;
                 case "RepairKitResurrectorS":
-                    canResurrect = deadPawnRaceName.Contains("android");
+                    canResurrect = deadPawnRaceName.ToLower().Contains("android") || race.label.ToLower().Contains("android") || deadPawnRaceName == "M7Mech";
                     break;
             }
 
             if (canResurrect)
             {
                 ResurrectionUtility.Resurrect(innerPawn);
+
+                // If hostile, force it to reboot, so that it can be captured and reprogrammed
+                if (innerPawn.Faction != null && innerPawn.Faction != Faction.OfPlayer && innerPawn.HostileTo(Faction.OfPlayer)) {
+                    HediffDef rebootHediffDef = DefDatabase<HediffDef>.GetNamed("RebootingSequenceAT");
+                    Hediff hediff = HediffMaker.MakeHediff(rebootHediffDef, innerPawn);
+                    hediff.Severity = 1f;
+                    innerPawn.health.AddHediff(hediff);
+                }
+
                 Messages.Message("MessagePawnResurrected".Translate(innerPawn).CapitalizeFirst(), innerPawn, MessageTypeDefOf.PositiveEvent, true);
                 this.Item.SplitOff(1).Destroy(DestroyMode.Vanish);
             }
