@@ -89,6 +89,15 @@ namespace AndroidResurrectionKit
             if (canResurrect)
             {
                 ResurrectionUtility.Resurrect(innerPawn);
+
+                // If hostile, force it to reboot, so that it can be captured and reprogrammed
+                if (innerPawn.Faction != null && innerPawn.Faction != Faction.OfPlayer && innerPawn.HostileTo(Faction.OfPlayer)) {
+                    HediffDef rebootHediffDef = DefDatabase<HediffDef>.GetNamed("RebootingSequenceAT");
+                    Hediff hediff = HediffMaker.MakeHediff(rebootHediffDef, innerPawn);
+                    hediff.Severity = 1f;
+                    innerPawn.health.AddHediff(hediff);
+                }
+
                 Messages.Message("MessagePawnResurrected".Translate(innerPawn).CapitalizeFirst(), innerPawn, MessageTypeDefOf.PositiveEvent, true);
                 this.Item.SplitOff(1).Destroy(DestroyMode.Vanish);
             }
