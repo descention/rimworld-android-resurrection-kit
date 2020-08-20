@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
     <identifier>ModManager</identifier>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <manifestUri>https://raw.githubusercontent.com/descention/rimworld-android-resurrection-kit/master/About/Manifest.xml</manifestUri>
     <downloadUri>https://github.com/descention/rimworld-android-resurrection-kit/releases/latest</downloadUri>
 </Manifest>
