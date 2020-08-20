@@ -1,6 +1,7 @@
 # rimworld-android-resurrection-kit
 
 Introduces 3 special, somewhat expensive kits:
+
 B-Tier Repair Kit, Resurrects T1 androids
 * 5 Repair Kits
 * 25 Steel
