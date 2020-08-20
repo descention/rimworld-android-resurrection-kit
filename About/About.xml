@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Android Resurrection Kit (rebuild)</name>
-  <author>malistaticy</author>
+  <author>malistaticy,descention</author>
   <supportedVersions>
       <li>1.1</li>
+	  <li>1.2</li>
    </supportedVersions>
    <packageId>malistaticy.androidresurrection</packageId>
   <description>
