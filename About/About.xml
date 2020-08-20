@@ -4,9 +4,9 @@
   <author>malistaticy,descention</author>
   <supportedVersions>
       <li>1.1</li>
-	  <li>1.2</li>
-   </supportedVersions>
-   <packageId>malistaticy.androidresurrection</packageId>
+      <li>1.2</li>
+  </supportedVersions>
+  <packageId>malistaticy.androidresurrection</packageId>
   <description>
 	Repair androids via craftable kits. Android Tiers by Atlas and associated mods required
   </description>
