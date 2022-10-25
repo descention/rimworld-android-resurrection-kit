@@ -36,14 +36,4 @@ To use, right click the item on the ground and pick the use option. Then select 
 If you try using a B-Tier on a T2 or higher, you'll get a message like "can't be repaired, thanks for trying". Same applies for an A-Tier on a T3 or higher.
 
 All items can be produced at Android Parts Workbench, and B-Tier kits can additionally be produced at normal machining table if you feel so inclined.</description>
-  <modDependencies>
-    <li>
-      <packageId>atlas.androidtiers</packageId>
-      <displayName>Android Tiers</displayName>
-      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1386412863</steamWorkshopUrl>
-    </li>
-  </modDependencies>
-  <loadAfter>
-    <li>atlas.androidtiers</li>
-  </loadAfter>
 </ModMetaData>
