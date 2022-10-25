@@ -4,7 +4,7 @@
         <mods>
             <li>atlas.androidtiers</li>
         </mods>
-        <Match Class="PatchOperationAdd">
+        <match Class="PatchOperationAdd">
             <xpath>Defs/ThingDef[defName="AndroidPartsTable"]/recipes</xpath>
             <value>
                 <li>RepairKitARK1</li>
