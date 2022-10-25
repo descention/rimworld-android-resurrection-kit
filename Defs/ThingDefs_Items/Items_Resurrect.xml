@@ -113,21 +113,13 @@
       <jobString>Making repair kit</jobString>  
       <allowMixingIngredients>false</allowMixingIngredients>
       <ingredients>
-         <li>
-            <filter>
-               <thingDefs>
-                  <li>RepairKitAT</li>
-               </thingDefs>
-            </filter>
-            <count>5</count>
-         </li>
 		 <li>
             <filter>
                <thingDefs>
                   <li>Steel</li>
                </thingDefs>
             </filter>
-            <count>25</count>
+            <count>125</count>
          </li>
 		 <li>
             <filter>
@@ -149,14 +141,14 @@
       <products>
          <RepairKitResurrectorB>1</RepairKitResurrectorB>
       </products>
-      <workAmount>2500</workAmount>
+      <workAmount>10000</workAmount>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
 	 <recipeUsers>
 		<li>TableMachining</li>
-		<li>AndroidPartsTable</li>
+      <li>FabricationBench</li>
       </recipeUsers>
       
 	</RecipeDef>
@@ -168,21 +160,13 @@
       <jobString>Making repair kit</jobString>  
       <allowMixingIngredients>false</allowMixingIngredients>
       <ingredients>
-         <li>
-            <filter>
-               <thingDefs>
-                  <li>RepairKitAT</li>
-               </thingDefs>
-            </filter>
-            <count>12</count>
-         </li>
 		 <li>
             <filter>
                <thingDefs>
                   <li>Steel</li>
                </thingDefs>
             </filter>
-            <count>50</count>
+            <count>290</count>
          </li>
 		 <li>
             <filter>
@@ -212,13 +196,13 @@
       <products>
          <RepairKitResurrectorA>1</RepairKitResurrectorA>
       </products>
-      <workAmount>4000</workAmount>
+      <workAmount>20000</workAmount>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
 	 <recipeUsers>
-		<li>AndroidPartsTable</li>
+      <li>FabricationBench</li>
       </recipeUsers>
       
 	</RecipeDef>
@@ -230,21 +214,13 @@
       <jobString>Making repair kit</jobString>  
       <allowMixingIngredients>false</allowMixingIngredients>
       <ingredients>
-         <li>
-            <filter>
-               <thingDefs>
-                  <li>RepairKitAT</li>
-               </thingDefs>
-            </filter>
-            <count>20</count>
-         </li>
 		 <li>
             <filter>
                <thingDefs>
                   <li>Steel</li>
                </thingDefs>
             </filter>
-            <count>85</count>
+            <count>485</count>
          </li>
 		 <li>
             <filter>
@@ -282,13 +258,13 @@
       <products>
          <RepairKitResurrectorS>1</RepairKitResurrectorS>
       </products>
-      <workAmount>7500</workAmount>
+      <workAmount>35000</workAmount>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
 	 <recipeUsers>
-		<li>AndroidPartsTable</li>
+      <li>FabricationBench</li>
       </recipeUsers>
       
 	</RecipeDef>

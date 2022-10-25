@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>atlas.androidtiers</li>
+        </mods>
+        <Match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="AndroidPartsTable"]/recipes</xpath>
+            <value>
+                <li>RepairKitARK1</li>
+                <li>RepairKitARK2</li>
+                <li>RepairKitARK3</li>
+            </value>
+        </match>
+	</Operation>
+</Patch>
