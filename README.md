@@ -35,3 +35,5 @@ This is updated to Rimworld 1.1+ by descention. Original mod is done by malistat
 1.1,1.2: https://steamcommunity.com/sharedfiles/filedetails/?id=2025966263
 
 GitHub: https://github.com/descention/rimworld-android-resurrection-kit
+
+To build, cd to the project directory (Source/AndroidResurrectionKit/) then use `dotnet build -c 1.4` or whichever version you need.

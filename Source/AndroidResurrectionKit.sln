@@ -9,6 +9,8 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		1.1|Any CPU = 1.1|Any CPU
 		1.2|Any CPU = 1.2|Any CPU
+		1.3|Any CPU = 1.3|Any CPU
+		1.4|Any CPU = 1.4|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
@@ -17,10 +19,10 @@ Global
 		{F8BC8D5B-E373-48AF-A184-E247E61B68D2}.1.1|Any CPU.Build.0 = 1.1|Any CPU
 		{F8BC8D5B-E373-48AF-A184-E247E61B68D2}.1.2|Any CPU.ActiveCfg = 1.2|Any CPU
 		{F8BC8D5B-E373-48AF-A184-E247E61B68D2}.1.2|Any CPU.Build.0 = 1.2|Any CPU
-		{F8BC8D5B-E373-48AF-A184-E247E61B68D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F8BC8D5B-E373-48AF-A184-E247E61B68D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F8BC8D5B-E373-48AF-A184-E247E61B68D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F8BC8D5B-E373-48AF-A184-E247E61B68D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8BC8D5B-E373-48AF-A184-E247E61B68D2}.1.3|Any CPU.ActiveCfg = 1.3|Any CPU
+		{F8BC8D5B-E373-48AF-A184-E247E61B68D2}.1.3|Any CPU.Build.0 = 1.3|Any CPU
+		{F8BC8D5B-E373-48AF-A184-E247E61B68D2}.1.4|Any CPU.ActiveCfg = 1.4|Any CPU
+		{F8BC8D5B-E373-48AF-A184-E247E61B68D2}.1.4|Any CPU.Build.0 = 1.4|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
